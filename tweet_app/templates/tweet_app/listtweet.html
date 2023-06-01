@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <br><br><br>
+    <h1>List Tweet App</h1>
+    {% for data in tweets %}
+       <ul>{{data.nickname}} ---> {{data.message}}</ul>
+    {% endfor %}
+    
+{% endblock content %}
